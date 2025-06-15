@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="../assets/videos/5.mp4" type="video/mp4" />
+    </video>
+    <form id="loginForm">
+        <h1>LOGIN</h1>
+        <input type="email" id="login-email" placeholder="Enter email" required>
+        <input type="password" id="login-password" placeholder="Enter password" required>
+        <button type="submit" id="login-btn">Login</button>
+        <strong>
+            <p id="login-message"></p>
+        </strong>
+        <p>Don't have an account ? <a href="register.html">Register</a></p>
+    </form>
+
+    <script type="module" src="../scripts/register.js"></script>
+    <script>
+        const bgVideo = document.getElementById("bg-video");
+        if (bgVideo) {
+            bgVideo.playbackRate = 0.4;
+        }
+    </script>
+</body>
+
+</html>

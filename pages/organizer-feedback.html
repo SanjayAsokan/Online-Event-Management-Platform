@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Feedback</title>
+  <link rel="stylesheet" href="../styles/organizer-feedback.css" />
+</head>
+
+<body>
+<a href="./organizer-dashboard.html" class="back-btn">← Back to Dashboard</a>
+  <div class="container">
+    <h1>My Event Feedback</h1>
+    <div id="feedbackSummary">Loading feedback...</div>
+
+    <div id="feedbackDetails" style="display: none;">
+      <h2 id="eventName"></h2>
+      <ul id="feedbackList"></ul>
+      <button onclick="document.getElementById('feedbackDetails').style.display='none'">Close</button>
+    </div>
+  </div>
+
+  <script type="module" src="../scripts/organizer-feedback.js"></script>
+</body>
+
+</html>

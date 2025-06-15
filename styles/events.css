@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e8c7a5, #accbdc);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.events-container {
+  display: grid;
+  gap: 20px;
+}
+
+.event-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+}
+
+.event-card h2 {
+  color: #0f246b;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+#messageBox {
+  margin-top: 20px;
+  text-align: center;
+  color: red;
+}
+
+.book-btn {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #18338b;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #3c65d9;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #1c2d67;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #3c65d9;
+}

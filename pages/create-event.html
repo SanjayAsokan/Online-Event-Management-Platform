@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Event</title>
+  <link rel="stylesheet" href="../styles/create-event.css" />
+</head>
+
+<body>
+  <div class="container">
+    <a href="./organizer-dashboard.html" class="back-btn">← Back to Dashboard</a>
+    <h1>Create a New Event</h1>
+    <form id="eventForm">
+      <input type="text" id="title" placeholder="Event Title" required />
+      <input type="date" id="date" required />
+      <input type="time" id="time" required />
+      <input type="text" id="venue" placeholder="Venue" required />
+      <textarea id="description" placeholder="Event Description" rows="5" required></textarea>
+      <button type="submit">Create Event</button>
+      <p id="messageBox"></p>
+    </form>
+  </div>
+
+  <script src="../scripts/firebase-config.js"></script>
+  <script type="module" src="../scripts/create-event.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Tickentry</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.7;
+      pointer-events: none;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .section {
+      margin-top: 60px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .team-member {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(8px);
+      text-align: center;
+      width: 220px;
+    }
+
+    .back-home-btn {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      padding: 10px 20px;
+      margin-bottom: 30px;
+      margin-top: 10px;/ border: 1px solid #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      backdrop-filter: blur(6px);
+      transition: background-color 0.3s;
+      text-align: left;
+    }
+
+    .back-home-btn:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .team-member img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 2px solid #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(6px);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .team-member {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="../assets/videos/2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay"></div>
+  <a href="../index.html" class="back-home-btn">← Back to Home</a>
+
+  <div class="content">
+
+    <h1>About Tickentry</h1>
+    <p>Your Gateway to Seamless Event Booking</p>
+
+    <div class="section about">
+      <h2>Our Story</h2>
+      <p>Founded in 2025, Tickentry was born out of the need for a smarter, faster, and more intuitive event management
+        experience. From cultural fests to international conferences, we connect people with events they love — securely
+        and effortlessly.</p>
+    </div>
+
+    <div class="section mission-vision">
+      <h2>Mission & Vision</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>🎯 Our Mission</h3>
+          <p>To make event discovery and booking a joyful and seamless journey for every user.</p>
+        </div>
+        <div class="card">
+          <h3>🌟 Our Vision</h3>
+          <p>To become the go-to platform for global event experiences — online and offline.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section team">
+      <h2>Meet the Team</h2>
+      <div class="team-container">
+        <div class="team-member">
+          <img src="../assets/photos/san.jpg" alt="Sanjay">
+          <h4>Sanjay A.</h4>
+          <p>Founder & Full Stack Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="../assets/photos/des.jpg" alt="Aarav">
+          <h4>Sanju</h4>
+          <p>Design & UX</p>
+        </div>
+        <div class="team-member">
+          <img src="../assets/photos/des.jpg" alt="Priya">
+          <h4>Sahe</h4>
+          <p>Frontend Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Tickentry. Crafted with ❤️ in India.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

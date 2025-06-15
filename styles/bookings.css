@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e8c7a5, #accbdc);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #1c2d67;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #3c65d9;
+}
+
+.bookings-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.booking-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: 500px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: scale(1.02);
+}
+
+.booking-card h2 {
+  color: #152c78;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 10px;
+}
+
+.booking-card p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.tag {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.booking-card {
+  background: #fff;
+  border-left: 4px solid #1d3557;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.feedback-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #1d3557;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.feedback-btn:hover {
+  background-color: #457b9d;
+}

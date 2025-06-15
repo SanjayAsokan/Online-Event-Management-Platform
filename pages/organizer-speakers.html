@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Speakers</title>
+  <link rel="stylesheet" href="../styles/organizer-speakers.css">
+</head>
+
+<body>
+  <a href="./organizer-dashboard.html" class="back-btn">← Back to Dashboard</a>
+
+  <div class="container">
+    <h1>Speaker Management</h1>
+    <form id="speakerForm">
+      <input type="text" id="name" placeholder="Speaker Name" required />
+      <input type="text" id="topic" placeholder="Session Topic" required />
+      <textarea id="bio" placeholder="Speaker Bio" required></textarea>
+      <input type="text" id="time" placeholder="Session Time (e.g. 10:00 AM)" required />
+      <select id="eventSelect" required>
+        <option value="">Select Event</option>
+      </select>
+      <button type="submit">Add Speaker</button>
+    </form>
+
+    <div id="messageBox"></div>
+  </div>
+  <div class="container1">
+    <h2>My Speakers</h2>
+    <div id="speakerList"></div>
+  </div>
+
+  <script type="module" src="../scripts/organizer-speakers.js"></script>
+</body>
+
+</html>

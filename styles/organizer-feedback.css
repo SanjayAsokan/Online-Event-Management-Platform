@@ -1,0 +1,125 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e8c7a5, #accbdc);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1d3557;
+  margin-bottom: 30px;
+}
+
+.event-card {
+  background-color: #ffffff;
+  border-left: 5px solid #51e7e0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.event-card h3 {
+  margin: 0 0 10px 0;
+  color: #1d3557;
+}
+
+.event-card p {
+  margin: 5px 0;
+}
+
+.view-btn {
+  margin-top: 10px;
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #0f2c55;
+}
+
+#feedbackDetails {
+  background-color: #ffffff;
+  border: 2px solid #1d3557;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+#feedbackDetails h2 {
+  margin-top: 0;
+  color: #e76f51;
+}
+
+#feedbackList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+#feedbackList li {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+#feedbackDetails button {
+  margin-top: 20px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#feedbackDetails button:hover {
+  background-color: #c72c3a;
+}
+
+.back-btn {
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 30px;
+  color: #1c2d67;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #3c65d9;
+}
+
+@media (max-width: 600px) {
+
+  .event-card,
+  #feedbackDetails {
+    padding: 15px;
+  }
+
+  .view-btn,
+  #feedbackDetails button {
+    width: 100%;
+    text-align: center;
+  }
+}

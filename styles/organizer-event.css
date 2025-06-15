@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f8faff;
+  color: #333;
+  background: linear-gradient(135deg, #e8c7a5, #accbdc);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #1c2d67;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.event-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+}
+
+.event-card h2 {
+  color: #142662;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.event-card p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.event-card input,
+.event-card textarea {
+  width: 100%;
+  margin: 6px 0;
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+textarea {
+  min-height: 60px;
+}
+
+.event-actions {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.event-actions button {
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn,
+.save-btn {
+  background-color: #d2e053;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 100px;
+  color: #1c2d67;
+}
+
+.edit-btn:hover,
+.save-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn,
+.cancel-btn {
+  width: 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #1bd4bb;
+  color: #1c2d67;
+}
+
+.delete-btn:hover,
+.cancel-btn:hover {
+  background-color: #c62828;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #1c2d67;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #3c65d9;
+}

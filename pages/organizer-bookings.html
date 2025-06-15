@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bookings</title>
+  <link rel="stylesheet" href="../styles/organizer-bookings.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <div style="margin-bottom: 20px;">
+      <a href="./organizer-dashboard.html" class="back-btn">← Back to Dashboard</a>
+    </div>
+
+    <h1>Bookings for My Events</h1>
+
+    <div id="booking-list" class="booking-list">
+    </div>
+
+    <p id="messageBox"></p>
+  </div>
+
+  <script type="module" src="../scripts/firebase-config.js"></script>
+  <script type="module" src="../scripts/fetch-organizer-bookings.js"></script>
+</body>
+
+</html>

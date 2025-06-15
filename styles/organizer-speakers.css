@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e8c7a5, #accbdc);
+  padding: 30px;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  color: #1d3557;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  background-color: #1d5657;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #457b9d;
+}
+
+#messageBox {
+  margin-top: 10px;
+  font-weight: 500;
+  color: green;
+}
+
+.speaker-card {
+  background: #e9f5ff;
+  border-left: 4px solid #92aa30;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #1c2d67;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #3c65d9;
+}

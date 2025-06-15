@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tickentry</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.rz2VILG4Vtevxa58ZGeH6QHaHa&pid=Api&P=0&h=180" class="logo-img" />
+        <span class="logo-text">Tick<span class="log-text2">Entry</span></span>
+      </a>
+    </div>
+    <ul class="nav-right">
+      <li><a href="./pages/about.html"><strong>About</strong></a></li>
+      <li id="lico"><a href="./pages/register.html" class="register-btn"><strong>Register</strong></a></li>
+      <li><a href="./pages/login.html" class="login-btn"><strong>Login</strong></a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="slideshow-bg">
+      <img src="./assets/photos/3.jpg" class="bg-slide" alt="Slide 3" />
+      <img src="./assets/photos/4.jpg" class="bg-slide" alt="Slide 4" />
+      <img src="./assets/photos/1.jpg" class="bg-slide" alt="Slide 1" />
+      <img src="./assets/photos/5.jpg" class="bg-slide" alt="Slide 5" />
+      <img src="./assets/photos/6.jpg" class="bg-slide" alt="Slide 6" />
+    </div>
+
+    <div class="hero-overlay">
+      <h1>Welcome to Tickentry</h1>
+      <p>Book your event slots effortlessly. Organized. Simple. Smart.</p>
+      <a href="./pages/register.html" class="btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <section id="features" class="features-section">
+    <h2>Why Choose Tickentry?</h2>
+    <div class="features-container">
+      <div class="feature-card">
+        <h3>Easy Booking</h3>
+        <p>Reserve event slots in just a few clicks.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Real-Time Updates</h3>
+        <p>Stay updated with event status and availability.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Secure Access</h3>
+        <p>Safe login and user data protection guaranteed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="features-container">
+      <div class="feature-card">
+        <h3>1. Register</h3>
+        <p>Create your account to get started.</p>
+      </div>
+      <div class="feature-card">
+        <h3>2. Explore Events</h3>
+        <p>Choose from a variety of events.</p>
+      </div>
+      <div class="feature-card">
+        <h3>3. Book Your Spot</h3>
+        <p>Instant confirmation and reminders.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <p>"Tickentry made event registration so smooth. Highly recommend!"</p>
+        <span>- Olivia, Organizer</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"A simple and smart way to book events. Love the clean UI!"</p>
+        <span>- Ramesh, User</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to explore amazing events?</h2><br>
+    <a href="./pages/register.html" class="btn-primary">Create an Account</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-column">
+        <h3>About Tickentry</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Press Releases</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Connect With Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Help & Info</h3>
+        <ul>
+          <li><a href="#">Vendor Login</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Registered Office</h3>
+        <address>
+          Tickentry HQ<br />
+          No10/12, Prestige Plaza, 1st Floor<br />
+          Koramangala, Bengaluru – 560034<br />
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tickentry. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    let index = 0;
+    const slides = document.querySelectorAll('.bg-slide');
+
+    function startSlideshow() {
+      slides.forEach(slide => slide.classList.remove('active'));
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }
+
+    slides[0].classList.add('active');
+    setInterval(startSlideshow, 4000);
+  </script>
+
+</body>
+
+</html>
